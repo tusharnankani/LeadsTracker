@@ -9,8 +9,7 @@ let currentLeads; // array of @strings links
 window.onload = (e) => {
 	// input field should be focused on load;
 	inputElement.focus();
-
-	// fetch current leads from locaStorage;
+	// fetch current leads from localStorage;
 	currentLeads = JSON.parse(localStorage.getItem("myLeads") === null)
 		? []
 		: JSON.parse(localStorage.getItem("myLeads"));
@@ -19,7 +18,7 @@ window.onload = (e) => {
 };
 
 saveInputBtn.addEventListener("click", () => {
-	if (inputElement.value) {
+	if (inputElement.value && !checkDuplicates(inputElement.value)) {
 		currentLeads.push(inputElement.value);
 		saveLocalLeads();
 		renderLeads();
@@ -34,7 +33,8 @@ saveTabBtn.addEventListener("click", () => {
 		// the return variable should only have one entry
 
 		let activeTab = tabs[0];
-		currentLeads.push(activeTab.url);
+		if(!checkDuplicates(activeTab.url))
+			currentLeads.push(activeTab.url);
 		saveLocalLeads();
 		renderLeads();
 	});
@@ -73,4 +73,17 @@ function renderLeads() {
  */
 function saveLocalLeads() {
 	localStorage.setItem("myLeads", JSON.stringify(currentLeads));
+}
+
+/* *
+ * Save Local Leads to the `local storage` with the key "myLeads"
+ *
+ * 
+ * @param {string} - lead to be checked, if present 
+ * 
+ * @returns {boolean} - if duplicate present in the array
+ */
+function checkDuplicates(lead) {
+	let tempSet = new Set(currentLeads);
+	return (tempSet.has(lead));
 }
