@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-height: 400px;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 400px;
+  margin: 3em;
+}
+
+body .container input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1em;
+  padding: 0.4rem 0.5em;
+  margin-bottom: 1.5em;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid #023047;
+  width: calc(100vw - 6em);
+  min-width: 400px;
+}
+
+body .container .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+body .container .btns button {
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+}
+
+body .container .btns button:hover {
+  cursor: pointer;
+}
+
+body .container .btns button .disable {
+  opacity: 0.5;
+  cursor: default;
+}
+
+body .container .btns .save {
+  color: #ffffff;
+  background-color: #023047;
+}
+
+body .container .btns #delete {
+  color: #023047;
+  background-color: #ffffff;
+  border: 1px solid #023047;
+}
+
+body .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 1.5rem 0;
+}
+
+body .container ul li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+body .container ul li a {
+  color: #023047;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+body .container ul li a:hover {
+  cursor: pointer;
+  color: #fb8500;
+}
+/*# sourceMappingURL=main.css.map */

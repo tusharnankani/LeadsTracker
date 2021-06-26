@@ -1,0 +1,11 @@
+{
+	"name": "Leads Tracker",
+	"description": "An extension to keep a track of your leads.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_icon": "assets/logo_32.png",
+		"default_popup": "index.html"
+	},
+	"permissions": ["tabs"]
+}

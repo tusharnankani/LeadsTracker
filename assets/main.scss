@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+$bg-color: #ffffff;
+$theme-color-0: #023047;
+$theme-color-1: #8ecae6;
+$theme-color-2: #219ebc;
+$theme-color-3: #ffb703;
+$theme-color-2: #fb8500;
+
+$font-stack: "Poppins", sans-serif;
+$link-stack: "Montserrat", sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-stack;
+}
+
+body {
+	max-height: 400px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		min-width: 400px;
+		margin: 3em;
+		
+		input {
+			box-sizing: border-box;
+			font-size: 1em;
+			padding: 0.4rem 0.5em;
+			margin-bottom: 1.5em;
+			border-radius: 2px;
+			background-color: transparent;
+			border: 1px solid $theme-color-0;
+			width: calc(100vw - 6em);
+			min-width: 400px;
+		}
+
+		.btns {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			width: 100%;
+
+			button {
+				padding: 0.4em 1em;
+				font-size: 1em;
+				font-weight: 300;
+				letter-spacing: 1px;
+				border: none;
+				border-radius: 5px;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				.disable {
+					opacity: 0.5;
+					cursor: default;
+				}
+			}
+
+			.save {
+				color: $bg-color;
+				background-color: $theme-color-0;
+			}
+
+			#delete {
+				color: $theme-color-0;
+				background-color: $bg-color;
+				border: 1px solid $theme-color-0;
+			}
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: flex-start;
+			margin: 1.5rem 0;
+
+			li {
+				list-style: none;
+				font-family: $link-stack;
+				padding: 0;
+				word-wrap: break-word;
+
+				a {
+					color: $theme-color-0;
+					transition: ease 0.2s;
+
+					&:hover {
+						cursor: pointer;
+						color: $theme-color-2;
+					}
+				}
+			}
+		}
+	}
+}
