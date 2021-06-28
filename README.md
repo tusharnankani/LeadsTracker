@@ -21,7 +21,7 @@ Extensions can be [loaded in unpacked mode](https://developer.chrome.com/extensi
 3. Click on the "Load unpacked extension." button.
 4. Clone the repository and select the directory - LeadsTracker, containing your **unpacked** extension.
 
-![demo](assets\readme\lt-demo.gif)
+![demo](assets/readme/lt-demo.gif)
 
 ## Motivation?
 
