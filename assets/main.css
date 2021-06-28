@@ -27,19 +27,19 @@ body .container {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 400px;
-  margin: 3em;
+  margin: 3rem;
 }
 
 body .container input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1em;
-  padding: 0.4rem 0.5em;
-  margin-bottom: 1.5em;
-  border-radius: 2px;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
   background-color: transparent;
   border: 1px solid #023047;
-  width: calc(100vw - 6em);
+  width: calc(100vw - 6rem);
   min-width: 400px;
 }
 
@@ -57,12 +57,14 @@ body .container .btns {
 }
 
 body .container .btns button {
-  padding: 0.4em 1em;
-  font-size: 1em;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 1px;
   border: none;
   border-radius: 5px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 body .container .btns button:hover {
@@ -79,10 +81,19 @@ body .container .btns .save {
   background-color: #023047;
 }
 
+body .container .btns .save:hover {
+  background-color: #002538;
+}
+
 body .container .btns #delete {
   color: #023047;
   background-color: #ffffff;
   border: 1px solid #023047;
+}
+
+body .container .btns #delete:hover {
+  color: #ffffff;
+  background-color: #023047;
 }
 
 body .container ul {
@@ -102,8 +113,9 @@ body .container ul {
 body .container ul li {
   list-style: none;
   font-family: "Montserrat", sans-serif;
-  padding: 0;
-  word-wrap: break-word;
+  font-size: 2ch;
+  overflow-wrap: break-word;
+  max-width: calc(100vw - 6rem);
 }
 
 body .container ul li a {

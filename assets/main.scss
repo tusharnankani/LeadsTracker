@@ -28,17 +28,17 @@ body {
 		align-items: flex-start;
 		justify-content: center;
 		min-width: 400px;
-		margin: 3em;
-		
+		margin: 3rem;
+
 		input {
 			box-sizing: border-box;
-			font-size: 1em;
-			padding: 0.4rem 0.5em;
-			margin-bottom: 1.5em;
-			border-radius: 2px;
+			font-size: 0.95rem;
+			padding: 0.4rem 0.5rem;
+			margin-bottom: 1.5rem;
+			border-radius: 4px;
 			background-color: transparent;
 			border: 1px solid $theme-color-0;
-			width: calc(100vw - 6em);
+			width: calc(100vw - 6rem);
 			min-width: 400px;
 		}
 
@@ -49,12 +49,13 @@ body {
 			width: 100%;
 
 			button {
-				padding: 0.4em 1em;
-				font-size: 1em;
+				padding: 0.4rem 1rem;
+				font-size: 0.9rem;
 				font-weight: 300;
 				letter-spacing: 1px;
 				border: none;
 				border-radius: 5px;
+				transition: ease 0.3s;
 
 				&:hover {
 					cursor: pointer;
@@ -69,12 +70,21 @@ body {
 			.save {
 				color: $bg-color;
 				background-color: $theme-color-0;
+
+				&:hover {
+					background-color: #002538;
+				}
 			}
 
 			#delete {
 				color: $theme-color-0;
 				background-color: $bg-color;
 				border: 1px solid $theme-color-0;
+
+				&:hover {
+					color: $bg-color;
+					background-color: $theme-color-0;
+				}
 			}
 		}
 
@@ -87,8 +97,9 @@ body {
 			li {
 				list-style: none;
 				font-family: $link-stack;
-				padding: 0;
-				word-wrap: break-word;
+				font-size: 2ch;
+				overflow-wrap: break-word;
+				max-width: calc(100vw - 6rem);
 
 				a {
 					color: $theme-color-0;
