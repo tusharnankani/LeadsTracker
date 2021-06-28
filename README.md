@@ -1,6 +1,6 @@
 # LeadsTracker
 
-- A chrome extension to track your leads.
+A chrome extension to track your leads.
 
 ![cover](assets/readme/poster_cover.png)
 
@@ -30,6 +30,7 @@ Extensions can be [loaded in unpacked mode](https://developer.chrome.com/extensi
 
 ## References
 
+- [Sass - freeCodeCamp](https://www.freecodecamp.org/learn/front-end-libraries/sass/)
 - [Color Palette](https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500)
 - [chrome.tabs - Chrome Developers](https://developer.chrome.com/docs/extensions/reference/tabs/#get-the-current-tab)
 - [window url for extensions](https://stackoverflow.com/a/17826527)
