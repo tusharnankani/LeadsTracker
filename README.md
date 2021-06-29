@@ -16,10 +16,10 @@ A chrome extension to track your leads.
 
 Extensions can be [loaded in unpacked mode](https://developer.chrome.com/extensions/getstarted#unpacked) by following the following steps:
 
-1. Visit `chrome://extensions` (via menu -> Tools -> Extensions).
-2. Enable Developer mode by ticking the checkbox in the upper-right corner.
-3. Click on the "Load unpacked extension." button.
-4. Clone the repository and select the directory - LeadsTracker, containing your **unpacked** extension.
+- Visit `chrome://extensions` (via menu -> Tools -> Extensions).
+- Enable Developer mode by ticking the checkbox in the upper-right corner.
+- Click on the "Load unpacked extension." button.
+- Clone the repository and select the directory - LeadsTracker, containing your **unpacked** extension.
 
 ![demo](assets/readme/lt-demo.gif)
 
@@ -34,3 +34,13 @@ Extensions can be [loaded in unpacked mode](https://developer.chrome.com/extensi
 - [Color Palette](https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500)
 - [chrome.tabs - Chrome Developers](https://developer.chrome.com/docs/extensions/reference/tabs/#get-the-current-tab)
 - [window url for extensions](https://stackoverflow.com/a/17826527)
+
+### License 📜
+
+- [MIT License](/LICENSE)
+
+## Author
+
+Tushar Nankani
+
+- [LinkedIn](https://www.linkedin.com/in/tusharnankani/) | [Twitter](https://twitter.com/tusharnankanii)

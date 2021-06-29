@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 $bg-color: #ffffff;
@@ -92,7 +91,7 @@ body {
 			display: flex;
 			flex-direction: column-reverse;
 			align-items: flex-start;
-			margin: 1.5rem 0;
+			margin: 1.5rem 0 0 0;
 
 			li {
 				list-style: none;
