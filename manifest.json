@@ -7,5 +7,16 @@
 		"default_icon": "assets/logo_32.png",
 		"default_popup": "index.html"
 	},
-	"permissions": [ "tabs" ]
+	"permissions": [ "tabs" ],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"commands": {
+		"_execute_action": {
+			"suggested_key": {
+				"windows": "Ctrl+Shift+Z",
+				"mac": "Command+Shift+Z"
+			}
+		}
+	}
 }

@@ -9,6 +9,7 @@ A chrome extension to track your leads.
 - It is a full suite lead and client tracking service.
 - Keep up to date with each lead, and never miss another follow up.
 - Built for ease of use and simplicty, perfect for small businesses.
+- Has a hotkey to activate the extension: `Ctrl + Shift + Z`
 
 ![](assets/readme/ss.png)
 
@@ -34,6 +35,7 @@ Extensions can be [loaded in unpacked mode](https://developer.chrome.com/extensi
 - [Color Palette](https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500)
 - [chrome.tabs - Chrome Developers](https://developer.chrome.com/docs/extensions/reference/tabs/#get-the-current-tab)
 - [window url for extensions](https://stackoverflow.com/a/17826527)
+- [chrome.commands - Chrome Developers](https://developer.chrome.com/docs/extensions/reference/commands/)
 
 ### License 📜
 
